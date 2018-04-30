@@ -1,0 +1,2 @@
+# whitespace.cpp
+#include&lt;stdio.h> #include&lt;string.h> int main() {     FILE *fp1,*fp2;     fp1=fopen("input4.txt","r");     fp2=fopen("output4.txt","w");     char str[100];    while(fgets(str,100,fp1)!=NULL){         int i;     for(i=0;str[i]!=NULL;i++){         if(str[i]=='\n'||str[i]=='\t'||str[i]==' ')     {      }     else         {         fprintf(fp2,"%c",str[i]);         }          }}     return 0; }
